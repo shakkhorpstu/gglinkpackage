@@ -13,7 +13,7 @@ Route::group(['namespace' => 'Mahmud\GglinkTest\Http\Controllers'], function() {
         Route::get('/create', [UserController::class, 'show'])->name('user.create');
         Route::post('/', [UserController::class, 'store'])->name('user.store');
         Route::get('/edit', [UserController::class, 'store'])->name('user.edit');
-        Route::put('update', [UserController::class, 'update'])->name('user.update');
-        Route::delete('/delete', [UserController::class, 'destroy'])->name('user.destroy');
+        Route::post('update', [UserController::class, 'update'])->name('user.update');
+        Route::post('/delete', [UserController::class, 'destroy'])->name('user.delete');
     });
 });

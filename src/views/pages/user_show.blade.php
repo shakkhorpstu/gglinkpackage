@@ -19,7 +19,7 @@
                 </table>
 
                 <a role="button" href="{{ route('user.edit') }}">Edit User</a>
-                <form action="{{ route('user.store') }}" method="post">
+                <form action="{{ route('user.delete') }}" method="post">
                     <input type="hidden" name="id" value="{{ $user->id }}" />
                     <button type="submit" class="btn btn-danger">Delete user</button>
                 </form>

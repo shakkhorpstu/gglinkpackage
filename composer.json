@@ -1,0 +1,19 @@
+{
+    "name": "mahmud/gglink",
+    "description": "Package for gglink test",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahmud Hasan Shakkhor",
+            "email": "shakkhor@tikweb.dk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mahmud\\GglinkTest\\": "src/"
+        }
+    }
+}

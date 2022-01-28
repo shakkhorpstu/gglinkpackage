@@ -19,10 +19,6 @@ class AuthRepository
                 'X-API-KEY' => 'AF0F56B4962DB226607A4C83F41CAF7E',
                 'X-Token' => $token
             ]]); // http initialize with header
-            $client = new Client(['headers' => [
-                'Content-type' => 'application/json; charset=UTF-8'
-            ]]); // http initialize with header
-
             $response = $client->post('https://api.ggtasker.co.uk/user/login', ['form_params' => $data]); // api call & pass data as body
             if($response && $response->getBody() && $response->getBody()->getContents()) {
                 return json_decode($response->getBody()->getContents());
